@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metro Ticket Booking</title>
+</head>
+<body>
+
+    <h1>🚇 Metro Ticket Booking Portal</h1>
+    <p>Book your metro tickets easily and quickly!</p>
+
+    <form action="#">
+        <!-- From Station -->
+        <label for="from">From Station:</label>
+        <select id="from" name="from">
+            <option value="Ameerpet">Ameerpet</option>
+            <option value="Miyapur">Miyapur</option>
+            <option value="LB Nagar">LB Nagar</option>
+        </select>
+        <br><br>
+
+        <!-- To Station -->
+        <label for="to">To Station:</label>
+        <select id="to" name="to">
+            <option value="KPHB">KPHB</option>
+            <option value="Nagole">Nagole</option>
+            <option value="MG Bus Station">MG Bus Station</option>
+        </select>
+        <br><br>
+
+        <!-- Date of Travel -->
+        <label for="date">Date of Travel:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+        <!-- Passenger Name -->
+        <label for="name">Passenger Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Ticket Type -->
+        <label>Ticket Type:</label>
+        <input type="radio" name="type" value="single" checked> Single
+        <input type="radio" name="type" value="return"> Return
+        <br><br>
+
+        <!-- Number of Tickets -->
+        <label for="tickets">No. of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="5" value="1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">🎟 Book Ticket</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 MetroRail Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
